@@ -1,36 +1,41 @@
 # Byte — Downloads
 
-Installers and update manifests for **Byte**, the local-first Claude Code observability dashboard.
+Installers and update manifests for **Byte**, the coding agent monitor.
 
-This repository holds **no source code**. It exists so that installed copies of Byte can reach their update feed, and so anyone with a licence can download a build, without the product's source repository being public.
+This repository contains release downloads. Byte's source repository remains private.
 
-## Downloads
+## Byte 2.0.0
 
-Every build is on the [Releases](../../releases) page.
+Download the package for your platform from the [Byte 2.0.0 release](https://github.com/anshikaeidetic/Byte-Releases/releases/tag/v2.0.0).
 
-| Platform | File |
-|---|---|
-| Windows (installer) | `Byte-Setup-<version>-x64.exe` |
-| Windows (no install) | `Byte-<version>-x64-portable.exe` |
-| macOS (Apple silicon) | `Byte-<version>-arm64.dmg` |
-| macOS (Intel) | `Byte-<version>-x64.dmg` |
-| Linux (Debian/Ubuntu) | `ByteAgentMonitor-<version>-amd64.deb` |
-| Linux (portable) | `ByteAgentMonitor-<version>-x86_64.AppImage` |
-| Node, no install | `Byte-Runner-<version>-x64.zip` |
+| Platform | Package |
+| --- | --- |
+| Windows installer | `Byte-Setup-2.0.0-x64.exe` |
+| Windows portable | `Byte-2.0.0-x64-portable.exe` |
+| macOS Apple Silicon | `Byte-2.0.0-arm64.dmg` |
+| macOS Intel | `Byte-2.0.0-x64.dmg` |
+| Linux Debian/Ubuntu | `ByteAgentMonitor-2.0.0-amd64.deb` |
+| Linux AppImage | `ByteAgentMonitor-2.0.0-x86_64.AppImage` |
 
-`latest.yml`, `latest-mac.yml` and `latest-linux.yml` are the update manifests. They are read by the app, not by you.
+The release includes `latest.yml`, `latest-mac.yml` and `latest-linux.yml`. Keep these manifests with the corresponding packages when mirroring a release.
 
-## Verifying a download
+The installed Windows app and Linux AppImage support automatic updates. To update macOS, download the matching DMG and replace Byte in Applications. Existing data and enrolment are preserved.
 
-Each release carries `SHA256SUMS.txt`.
+Windows and macOS packages are unsigned. Read the installation instructions in the release notes and verify the downloaded file before installation.
+
+## Verify a download
+
+Compare the result with the same release's `SHA256SUMS.txt`:
 
 ```powershell
-Get-FileHash .\Byte-Setup-<version>-x64.exe -Algorithm SHA256
+Get-FileHash .\Byte-Setup-2.0.0-x64.exe -Algorithm SHA256
 ```
 
 ```bash
-shasum -a 256 Byte-<version>-arm64.dmg
+shasum -a 256 Byte-2.0.0-arm64.dmg
 ```
+
+Previous versions remain on the [releases page](https://github.com/anshikaeidetic/Byte-Releases/releases).
 
 ## Licence
 

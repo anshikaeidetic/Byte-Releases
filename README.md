@@ -4,20 +4,20 @@ Installers and update manifests for **Byte**, the workspace for coding agents, t
 
 This repository contains release downloads. Byte's source repository remains private.
 
-## Byte 2.4.2
+## Byte 2.4.3
 
-Byte 2.4.2 improves parent and child history collection, safe native-run navigation, browser connection security, payment validation and transactional provisioning. Byte Solo preserves personal plans and data. Enterprise is a restricted administration preview. Identity-provider activation, company collection and managed execution remain held until their release gates pass.
+Byte 2.4.3 improves collector cancellation and desktop shutdown, bounds updater diagnostics and clears recovered update errors. It also makes product-version synchronization preserve dependency pins. The security, payment and database corrections from 2.4.2 remain included. Byte Solo preserves personal plans and data. Enterprise is a restricted administration preview. Identity-provider activation, company collection and managed execution remain held until their release gates pass.
 
-Download the package for your platform from the [Byte 2.4.2 release](https://github.com/anshikaeidetic/Byte-Releases/releases/tag/v2.4.2).
+Download the package for your platform from the [Byte 2.4.3 release](https://github.com/anshikaeidetic/Byte-Releases/releases/tag/v2.4.3).
 
 | Platform | Package |
 | --- | --- |
-| Windows installer | `Byte-Setup-2.4.2-x64.exe` |
-| Windows portable | `Byte-2.4.2-x64-portable.exe` |
-| macOS Apple Silicon | `Byte-2.4.2-arm64.dmg` |
-| macOS Intel | `Byte-2.4.2-x64.dmg` |
-| Linux Debian/Ubuntu | `ByteAgentMonitor-2.4.2-amd64.deb` |
-| Linux AppImage | `ByteAgentMonitor-2.4.2-x86_64.AppImage` |
+| Windows installer | `Byte-Setup-2.4.3-x64.exe` |
+| Windows portable | `Byte-2.4.3-x64-portable.exe` |
+| macOS Apple Silicon | `Byte-2.4.3-arm64.dmg` |
+| macOS Intel | `Byte-2.4.3-x64.dmg` |
+| Linux Debian/Ubuntu | `ByteAgentMonitor-2.4.3-amd64.deb` |
+| Linux AppImage | `ByteAgentMonitor-2.4.3-x86_64.AppImage` |
 
 The release includes `latest.yml`, `latest-mac.yml` and `latest-linux.yml`. Keep these manifests with the corresponding packages when mirroring a release.
 
@@ -30,11 +30,11 @@ Windows and macOS packages are unsigned. Read the installation instructions in t
 Compare the result with the same release's `SHA256SUMS.txt`:
 
 ```powershell
-Get-FileHash .\Byte-Setup-2.4.2-x64.exe -Algorithm SHA256
+Get-FileHash .\Byte-Setup-2.4.3-x64.exe -Algorithm SHA256
 ```
 
 ```bash
-shasum -a 256 Byte-2.4.2-arm64.dmg
+shasum -a 256 Byte-2.4.3-arm64.dmg
 ```
 
 Previous versions remain on the [releases page](https://github.com/anshikaeidetic/Byte-Releases/releases).
